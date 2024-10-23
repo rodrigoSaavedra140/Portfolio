@@ -89,6 +89,7 @@ main{
 
 #inicio article{
     padding-top: 1rem;
+    margin: auto 18px;
     color: var(--pink);
 }
 h3 {
@@ -105,6 +106,7 @@ h3 {
             1fr
         )
     );
+    padding-left: 3rem;
     padding-top: 120px;
 }
 

@@ -79,7 +79,7 @@ main{
     border-radius: 50%;
     margin-top: 32px;
     opacity: 0.8;
-    border: 2px solid var(--grey);
+    border: 3px solid var(--grey);
 }
 
 #inicio h1{
@@ -97,9 +97,14 @@ h3 {
 }
 
 #projectos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(
+            150px,
+            1fr
+        )
+    );
     padding-top: 120px;
 }
 
@@ -111,7 +116,7 @@ h3 {
     border-radius: 12px;
     border: solid;
     border-color: var(--pink);
-    margin: auto 3.6rem;
+    margin: auto 1px;
     width: 20rem;
     height: 32rem;
 }
@@ -147,7 +152,7 @@ footer{
     padding: 0;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
-    border: 3px solid;
+    border: 5px solid;
     border-top-color: var(--pink);
     border-left-color: var(--pink);
     border-right-color: var(--pink);

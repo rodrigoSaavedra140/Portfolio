@@ -4,8 +4,12 @@
     --grey2: #263859;
     --navy: #17223B;
 }
+html,body{
+    height: 100%;
+}
 body{
     background: radial-gradient(var(--pink) 33%, var(--navy) 50%);
+
 }
 
 #container {

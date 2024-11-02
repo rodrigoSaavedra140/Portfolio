@@ -148,7 +148,7 @@ main{
     margin: 12px auto 0;
     height: 18vh;
     width: auto;
-    border-radius: 1%;
+    border-radius: 12px;
     opacity: 98%;
   }
   #tecnologias {

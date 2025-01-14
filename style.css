@@ -146,19 +146,20 @@ main{
   }
   .container2 .glass img {
     margin: 12px auto 0;
-    height: 18vh;
+    height: 16vh;
     width: auto;
     border-radius: 12px;
     opacity: 98%;
   }
   #tecnologias {
+    display:flex;
     margin: auto;
-    padding-bottom: 26px;
+    padding-bottom: 50px;
   }
   #tecnologias img{
     display: inline-flex;
     width: auto;
-    height: 6vh;
+    height: 4vh;
     margin: auto 12px;
 }
 

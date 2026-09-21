@@ -1,72 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+  <meta name="description" content="Rodrigo Saavedra — computer science student and developer in progress. Projects, skills and contact.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Rodrigo Saavedra — Portfolio</title>
 </head>
 <body>
-    <div class="container-main">
-        <!-- <header>
-            <nav>
-                <a href="#container2">Projectos</a>
-                <a href="#container1">Inicio</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
-        </header> -->
-        <main>
-                <div class="container1" id="container1">
-                <div class="card">
-                    <div class="card2">
-                        <img src="./img/foto.jfif" alt="">
-                        <div>
-                            <h1>I´m Rodrigo Saavedra</h1>
-                            <p>Developer in process and student of computer science.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-                  <div class="container2" id="container2">
-                    <a href="https://rodrigosaavedra140.github.io/calculadora/" data-text="Calculator" style="--r:-23;" class="glass" target="_blank">
-                      <img src="./img/Calculator.jpg" alt="">
-                      <div id="tecnologias">
-                        <img src="https://img.icons8.com/?size=100&id=v8RpPQUwv0N8&format=png&color=000000" alt="js">
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="css">
-                        <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="js">
-                    </div>
-                    </a>
-                    <a href="https://rodrigosaavedra140.github.io/calculadora/" data-text="Calculator" style="--r:-4;" class="glass" target="_blank">
-                      <img src="./img/Calculator.jpg" alt="">
-                      <div id="tecnologias">
-                        <img src="https://img.icons8.com/?size=100&id=v8RpPQUwv0N8&format=png&color=000000" alt="js">
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="css">
-                        <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="js">
-                    </div>
-                    </a>
-                    <a href="https://rodrigosaavedra140.github.io/calculadora/" data-text="Calculator" style="--r:30;" class="glass " target="_blank">
-                      <img src="./img/Calculator.jpg" alt="">
-                      <div id="tecnologias">
-                        <img src="https://img.icons8.com/?size=100&id=v8RpPQUwv0N8&format=png&color=000000" alt="js">
-                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="css">
-                        <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="js">
-                    </div>
-                    </a>
-                </div>
-        </main>
-        <footer>
-            <div id="contacto">
-                <a href="https://github.com/rodrigoSaavedra140" target="_blank" rel="noopener noreferrer">
-                    <img src="https://img.icons8.com/?size=100&id=fqiiHnc6DMUi&format=png&color=000000" alt="github">
-                </a>
-                <a href="https://www.linkedin.com/in/hugo-rodrigo-saavedra-diaz/" target="_blank" rel="noopener noreferrer">
-                    <img class="in" src="https://img.icons8.com/?size=100&id=ZmG5l3ueI6FO&format=png&color=000000" alt="linkedin">
-                </a>
-                <a href="" target="_blank" rel="noopener noreferrer"></a>
-            </div>
-        </footer>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="tabbar">
+    <div class="tabbar__inner">
+      <span class="tabbar__brand">rodrigo@portfolio</span>
+      <nav class="tabbar__nav" aria-label="Main navigation">
+        <a class="tab" href="#hero"><span class="tab__dot"></span>index.html</a>
+        <a class="tab" href="#projects">projects.js</a>
+        <a class="tab" href="#skills">skills.json</a>
+        <a class="tab" href="#contact">contact.md</a>
+      </nav>
+      <button class="tabbar__toggle" id="navToggle" aria-expanded="false" aria-controls="mobileNav" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-    <script src="script.js"></script>
+    <nav id="mobileNav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#hero">index.html</a>
+      <a href="#projects">projects.js</a>
+      <a href="#skills">skills.json</a>
+      <a href="#contact">contact.md</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section id="hero" class="hero">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__light terminal__light--red"></span>
+          <span class="terminal__light terminal__light--yellow"></span>
+          <span class="terminal__light terminal__light--green"></span>
+          <span class="terminal__title">profile.js</span>
+        </div>
+        <div class="terminal__body">
+          <p class="sr-only">Rodrigo Saavedra — computer science student and developer in progress. Building small tools and interfaces, one commit at a time.</p>
+          <div class="code" aria-hidden="true">
+            <div class="code__line"><span class="code__num">1</span><span class="code__text tok-comment">// profile.js</span></div>
+            <div class="code__line"><span class="code__num">2</span><span class="code__text"><span class="tok-kw">const</span> rodrigo = {</span></div>
+            <div class="code__line"><span class="code__num">3</span><span class="code__text">  name: <span class="tok-str">"Rodrigo Saavedra"</span>,</span></div>
+            <div class="code__line"><span class="code__num">4</span><span class="code__text">  role: <span class="tok-str">"CS student &amp; developer in progress"</span>,</span></div>
+            <div class="code__line"><span class="code__num">5</span><span class="code__text">  focus: <span class="tok-str">"small tools and interfaces, one commit at a time"</span>,</span></div>
+            <div class="code__line"><span class="code__num">6</span><span class="code__text">};</span></div>
+            <div class="code__line"><span class="code__num">7</span><span class="code__text"><span class="tok-kw">export default</span> rodrigo;</span></div>
+            <div class="code__line"><span class="code__num">8</span><span class="code__text"><span class="cursor" aria-hidden="true"></span></span></div>
+          </div>
+        </div>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View project</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section__title">// projects</h2>
+
+      <article class="codecard">
+        <div class="codecard__bar">
+          <span class="terminal__light terminal__light--red"></span>
+          <span class="terminal__light terminal__light--yellow"></span>
+          <span class="terminal__light terminal__light--green"></span>
+          <span class="codecard__filename">calculadora.html</span>
+        </div>
+        <div class="codecard__body">
+          <img class="codecard__img" src="./img/Calculator.jpg" alt="Calculator app interface with a dark keypad and orange equals button">
+          <div class="codecard__content">
+            <h3>Calculator</h3>
+            <p>A calculator app built with vanilla HTML, CSS and JavaScript — basic operations, keyboard-style layout and a responsive UI.</p>
+            <ul class="tags">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="codecard__links">
+              <a href="https://rodrigosaavedra140.github.io/calculadora/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--small">Live demo</a>
+              <a href="https://github.com/rodrigoSaavedra140" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--small">Source code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="codecard">
+        <div class="codecard__bar">
+          <span class="terminal__light terminal__light--red"></span>
+          <span class="terminal__light terminal__light--yellow"></span>
+          <span class="terminal__light terminal__light--green"></span>
+          <span class="codecard__filename">rope_editor.rs</span>
+        </div>
+        <div class="codecard__body">
+          <div class="codecard__snippet" aria-hidden="true">
+            <div class="code__line"><span class="code__num">1</span><span class="code__text"><span class="tok-kw">struct</span> Rope { root: Rc&lt;RopeNode&gt; }</span></div>
+            <div class="code__line"><span class="code__num">2</span><span class="code__text"><span class="tok-kw">enum</span> RopeNode {</span></div>
+            <div class="code__line"><span class="code__num">3</span><span class="code__text">  Leaf(String),</span></div>
+            <div class="code__line"><span class="code__num">4</span><span class="code__text">  Concat(Rc&lt;RopeNode&gt;, Rc&lt;RopeNode&gt;),</span></div>
+            <div class="code__line"><span class="code__num">5</span><span class="code__text">}</span></div>
+          </div>
+          <div class="codecard__content">
+            <h3>Rope Text Editor <span class="status">in development</span></h3>
+            <p>A text editor built in Rust around a Rope data structure for efficient text editing — a Facade (<code>Rope</code>) over a Composite of <code>RopeNode</code>s, with nodes shared through <code>Rc</code>.</p>
+            <ul class="tags">
+              <li>Rust</li>
+              <li>Rope</li>
+              <li>Data structures</li>
+            </ul>
+            <div class="codecard__links">
+              <a href="https://github.com/rodrigoSaavedra140/Text-Editor" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--small">Source code</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section__title">// skills</h2>
+      <pre class="tree" aria-label="Skills, shown as a file tree">skills/
+├── html
+├── css
+├── javascript
+└── git</pre>
+    </section>
+
+  </main>
+
+  <footer id="contact" class="contact">
+    <h2 class="section__title">// contact</h2>
+    <p class="contact__prompt"><span class="prompt">$</span> reach --rodrigo</p>
+    <div class="contact__links">
+      <a href="https://github.com/rodrigoSaavedra140" target="_blank" rel="noopener noreferrer" class="social">
+        <img src="https://img.icons8.com/?size=100&id=fqiiHnc6DMUi&format=png&color=000000" alt="">
+        <span>GitHub</span>
+      </a>
+      <a href="https://www.linkedin.com/in/hugo-rodrigo-saavedra-diaz/" target="_blank" rel="noopener noreferrer" class="social">
+        <img src="https://img.icons8.com/?size=100&id=ZmG5l3ueI6FO&format=png&color=000000" alt="">
+        <span>LinkedIn</span>
+      </a>
+    </div>
+    <p class="contact__note">© <span id="year"></span> Rodrigo Saavedra</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

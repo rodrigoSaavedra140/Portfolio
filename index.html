@@ -78,14 +78,8 @@
           <span class="codecard__filename">rope_editor.rs</span>
         </div>
         <div class="codecard__body">
-          <div class="codecard__snippet" aria-hidden="true">
-            <div class="code__line"><span class="code__num">1</span><span class="code__text"><span class="tok-kw">struct</span> Rope { root: Rc&lt;RopeNode&gt; }</span></div>
-            <div class="code__line"><span class="code__num">2</span><span class="code__text"><span class="tok-kw">enum</span> RopeNode {</span></div>
-            <div class="code__line"><span class="code__num">3</span><span class="code__text">  Leaf(String),</span></div>
-            <div class="code__line"><span class="code__num">4</span><span class="code__text">  Concat(Rc&lt;RopeNode&gt;, Rc&lt;RopeNode&gt;),</span></div>
-            <div class="code__line"><span class="code__num">5</span><span class="code__text">}</span></div>
-          </div>
-          <div class="codecard__content">
+          <img class="codecard__img" src="./img/logo.png" alt="Editor-text app logo">
+            <div class="codecard__content">
             <h3>Rope Text Editor <span class="status">in development</span></h3>
             <p>A text editor built in Rust around a Rope data structure for efficient text editing — a Facade (<code>Rope</code>) over a Composite of <code>RopeNode</code>s, with nodes shared through <code>Rc</code>.</p>
             <ul class="tags">
